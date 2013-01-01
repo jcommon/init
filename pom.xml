@@ -25,7 +25,7 @@
     <dependency>
       <groupId>org.jcommon</groupId>
       <artifactId>jcommon</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>1.0</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -163,7 +163,7 @@
         </property>
       </activation>
       <properties>
-        <gpg.keyname>4E912FE5</gpg.keyname>	<!-- GPG Key ID to use for signing -->
+        <gpg.keyname>ABAF0C8B</gpg.keyname> <!-- GPG Key ID to use for signing -->
       </properties>
       <build>
         <plugins>
