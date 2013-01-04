@@ -1,8 +1,8 @@
 
 package jcommon.init;
 
-import jcommon.Namespaces;
-import jcommon.StringUtil;
+import jcommon.core.Namespaces;
+import jcommon.core.StringUtil;
 import jcommon.extract.Registry;
 import jcommon.extract.ResourceException;
 import jcommon.extract.Resources;
@@ -20,7 +20,7 @@ import javax.xml.xpath.XPathException;
 import javax.xml.xpath.XPathFactory;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.*;import java.lang.Class;import java.lang.IllegalStateException;import java.lang.Object;import java.lang.Override;import java.lang.Runtime;import java.lang.RuntimeException;import java.lang.String;import java.lang.Thread;import java.lang.Throwable;import java.net.URL;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;

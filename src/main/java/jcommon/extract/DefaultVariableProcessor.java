@@ -1,7 +1,7 @@
 
 package jcommon.extract;
 
-import jcommon.StringUtil;
+import jcommon.core.StringUtil;
 
 import java.util.HashMap;
 import java.util.Map;

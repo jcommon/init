@@ -1,8 +1,8 @@
 package jcommon.extract;
 
-import jcommon.StringUtil;import jcommon.extract.*;import jcommon.extract.IResourceCallback;import jcommon.extract.IResourceFilter;import jcommon.extract.IResourceProgressListener;import jcommon.extract.MissingResourceReferenceException;import jcommon.extract.Resources;
+import jcommon.core.StringUtil;
 
-import java.lang.NullPointerException;import java.lang.String;import java.util.HashMap;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;

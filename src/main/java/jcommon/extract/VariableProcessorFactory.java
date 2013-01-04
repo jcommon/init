@@ -1,9 +1,9 @@
 
 package jcommon.extract;
 
-import jcommon.Path;
-import jcommon.StringUtil;
-import jcommon.Sys;
+import jcommon.core.Path;
+import jcommon.core.StringUtil;
+import jcommon.core.Sys;
 
 import java.util.HashMap;
 import java.util.Map;

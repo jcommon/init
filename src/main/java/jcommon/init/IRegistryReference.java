@@ -1,7 +1,7 @@
 
 package jcommon.init;
 
-import jcommon.extract.Resources;import java.lang.Throwable;
+import jcommon.extract.Resources;
 
 /**
  *

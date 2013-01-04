@@ -1,10 +1,7 @@
 
 package jcommon.extract;
 
-import jcommon.extract.IResourceProcessor;
 import java.io.File;
-import java.lang.Iterable;
-import java.lang.String;
 
 /**
  * Interface that describes a series of resources for extraction.

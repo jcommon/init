@@ -1,7 +1,7 @@
 
 package jcommon.init;
 
-import java.lang.Throwable; /**
+/**
  *
  * @author David Hoyt <dhoyt@hoytsoft.org>
  */

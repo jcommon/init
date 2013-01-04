@@ -1,8 +1,8 @@
 
 package jcommon.extract;
 
-import jcommon.Namespaces;
-import jcommon.StringUtil;
+import jcommon.core.Namespaces;
+import jcommon.core.StringUtil;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

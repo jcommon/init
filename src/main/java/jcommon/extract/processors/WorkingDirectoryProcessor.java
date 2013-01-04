@@ -1,7 +1,7 @@
 
 package jcommon.extract.processors;
 
-import jcommon.StringUtil;
+import jcommon.core.StringUtil;
 import jcommon.extract.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -58,7 +58,7 @@ public class WorkingDirectoryProcessor extends DefaultResourceProcessor {
 
 	@Override
 	protected boolean processResource(final String fullResourceName, final IResourcePackage pkg, final IResourceFilter filter, final IResourceProgressListener progress) {
-		final String dir = StringUtil.isNullOrEmpty(path) || ".".equalsIgnoreCase(path) ? jcommon.Process.queryWorkingDirectory() : path;
+		final String dir = StringUtil.isNullOrEmpty(path) || ".".equalsIgnoreCase(path) ? jcommon.core.Process.queryWorkingDirectory() : path;
 		if (StringUtil.isNullOrEmpty(dir))
 			return true;
 
@@ -67,7 +67,7 @@ public class WorkingDirectoryProcessor extends DefaultResourceProcessor {
 			return false;
 
 		try {
-			return jcommon.Process.changeWorkingDirectory(d);
+			return jcommon.core.Process.changeWorkingDirectory(d);
 		} catch(Throwable t) {
 			return false;
 		}

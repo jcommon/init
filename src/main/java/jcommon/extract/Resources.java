@@ -1,9 +1,9 @@
 
 package jcommon.extract;
 
-import jcommon.Namespaces;
-import jcommon.StringUtil;
-import jcommon.extract.*;import jcommon.extract.DefaultResourceProcessor;import jcommon.extract.IResourceCallback;import jcommon.extract.IResourceFilter;import jcommon.extract.IResourcePackage;import jcommon.extract.IResourceProcessor;import jcommon.extract.IResourceProgressListener;import jcommon.extract.IVariableProcessor;import jcommon.extract.MissingResourceReferenceException;import jcommon.extract.Package;import jcommon.extract.ResourceException;import jcommon.extract.ResourceProcessorFactory;import jcommon.extract.VariableProcessorFactory;import jcommon.init.Loader;
+import jcommon.core.Namespaces;
+import jcommon.core.StringUtil;
+import jcommon.init.Loader;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -21,9 +21,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.*;import java.lang.InterruptedException;import java.lang.Math;import java.lang.Object;import java.lang.Override;import java.lang.Runnable;import java.lang.String;import java.lang.System;import java.lang.Throwable;import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.*;import java.util.concurrent.CancellationException;import java.util.concurrent.ExecutionException;import java.util.concurrent.ExecutorService;import java.util.concurrent.Future;import java.util.concurrent.RejectedExecutionException;import java.util.concurrent.TimeUnit;import java.util.concurrent.TimeoutException;
+import java.util.concurrent.*;
 
 import static jcommon.extract.ResourceUtils.createUnprivilegedExecutorService;
 import static jcommon.extract.ResourceUtils.stringAttributeValue;

@@ -1,9 +1,9 @@
 
 package jcommon.extract;
 
-import jcommon.Path;
-import jcommon.StringUtil;
-import jcommon.Sys;
+import jcommon.core.Path;
+import jcommon.core.StringUtil;
+import jcommon.core.Sys;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -13,11 +13,9 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathException;
 import java.io.File;
 import java.io.IOException;
-import java.lang.Override;import java.lang.RuntimeException;import java.lang.String;import java.lang.SuppressWarnings;import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-import static jcommon.extract.ResourceUtils.stringAttributeValue;
 
 /**
  *

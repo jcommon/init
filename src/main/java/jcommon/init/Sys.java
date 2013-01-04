@@ -32,7 +32,7 @@ import java.util.concurrent.Future;
  *
  * @author David Hoyt <dhoyt@hoytsoft.org>
  */
-public final class Sys extends jcommon.Sys {
+public final class Sys extends jcommon.core.Sys {
   //<editor-fold defaultstate="collapsed" desc="Getters">
   public static boolean isRegistryInitialized() {
     return Registry.isInitialized();

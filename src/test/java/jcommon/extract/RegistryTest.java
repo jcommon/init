@@ -1,6 +1,6 @@
 package jcommon.extract;
 
-import jcommon.OSFamily;
+import jcommon.core.OSFamily;
 import jcommon.init.Sys;
 
 import org.junit.*;
@@ -10,7 +10,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.lang.Exception;import static org.junit.Assert.*;
+import java.lang.Exception;
+import static org.junit.Assert.*;
 
 /**
  *

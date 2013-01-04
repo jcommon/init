@@ -1,7 +1,6 @@
 package jcommon.init;
 
-import jcommon.OSFamily;
-import jcommon.init.Sys;
+import jcommon.core.OSFamily;
 import org.junit.*;
 
 import static org.junit.Assert.assertTrue;

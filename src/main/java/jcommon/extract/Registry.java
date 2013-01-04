@@ -1,9 +1,9 @@
 
 package jcommon.extract;
 
-import jcommon.extract.*;import jcommon.extract.IResourceCallback;import jcommon.extract.IResourceFilter;import jcommon.extract.IResourceProgressListener;import jcommon.extract.Reference;import jcommon.extract.Resources;import jcommon.init.Loader;
+import jcommon.init.Loader;
 
-import java.lang.String;import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
 
 /**

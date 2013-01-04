@@ -1,6 +1,6 @@
 package jcommon.extract;
 
-import jcommon.StringUtil;
+import jcommon.core.StringUtil;
 import org.w3c.dom.Node;
 
 import java.io.*;

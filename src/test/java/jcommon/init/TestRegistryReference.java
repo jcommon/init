@@ -1,7 +1,7 @@
 
 package jcommon.init;
 
-import jcommon.Sys;
+import jcommon.core.Sys;
 import jcommon.extract.Resources;
 
 import static org.junit.Assert.assertTrue;

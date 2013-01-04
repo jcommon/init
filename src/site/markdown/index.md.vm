@@ -1,0 +1,24 @@
+<head><title>Welcome</title></head>
+
+JCommon Init
+-------------
+
+Provides access for loosely-coupled libraries to register initialization and shutdown routines at controlled points
+in an application. Also allows for the automatic extraction and processing of embedded resources at runtime. These
+resources are described in a special XML file and a number of processors can be used to do a variety of things such as
+loading a native library, conditionally extract a file, define an environment variable, create a symbolic link, set a
+variable for use later in the resource processing stage, etc.
+
+Please see the documentation for more information.
+
+To use this library, add the following snippet to your _pom_ file:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>${project.artifactId}</artifactId>
+        <version>${project.version}</version>
+    </dependency>
+</dependencies>
+```

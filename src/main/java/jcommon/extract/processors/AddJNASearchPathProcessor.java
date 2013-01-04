@@ -2,7 +2,7 @@
 package jcommon.extract.processors;
 
 import com.sun.jna.NativeLibrary;
-import jcommon.StringUtil;
+import jcommon.core.StringUtil;
 import jcommon.extract.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -66,7 +66,7 @@ public class AddJNASearchPathProcessor extends DefaultResourceProcessor {
 		if (StringUtil.isNullOrEmpty(libraryName))
 			return true;
 
-		final String dir = StringUtil.isNullOrEmpty(path) || ".".equalsIgnoreCase(path) ? jcommon.Process.queryWorkingDirectory() : path;
+		final String dir = StringUtil.isNullOrEmpty(path) || ".".equalsIgnoreCase(path) ? jcommon.core.Process.queryWorkingDirectory() : path;
 		if (StringUtil.isNullOrEmpty(dir))
 			return true;
 

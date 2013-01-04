@@ -1,9 +1,9 @@
 
 package jcommon.extract.processors;
 
-import jcommon.Path;
-import jcommon.StringUtil;
-import jcommon.Sys;
+import jcommon.core.Path;
+import jcommon.core.StringUtil;
+import jcommon.core.Sys;
 import jcommon.extract.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

@@ -1,10 +1,9 @@
 package jcommon.extract;
 
-import jcommon.Arch;
-import jcommon.OSFamily;
-import jcommon.Path;
-import jcommon.Sys;
-import jcommon.extract.Package;
+import jcommon.core.Arch;
+import jcommon.core.OSFamily;
+import jcommon.core.Path;
+import jcommon.core.Sys;
 import jcommon.extract.processors.FileProcessor;
 import jcommon.extract.processors.LibraryProcessor;
 import org.junit.*;

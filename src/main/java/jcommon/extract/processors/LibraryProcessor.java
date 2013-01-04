@@ -1,7 +1,7 @@
 
 package jcommon.extract.processors;
 
-import jcommon.StringUtil;
+import jcommon.core.StringUtil;
 import jcommon.extract.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

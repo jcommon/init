@@ -1,7 +1,7 @@
 
 package jcommon.extract.processors;
 
-import jcommon.StringUtil;
+import jcommon.core.StringUtil;
 import jcommon.extract.IResourcePackage;
 import jcommon.extract.IVariableProcessor;
 import jcommon.extract.ResourceProcessor;
