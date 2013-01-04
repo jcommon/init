@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Date-Revision-yyyymmdd" content="20130103" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>JCommon Init - Welcome</title>
+    <title>JCommon Init - Surefire Report</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.3.0.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -153,10 +153,12 @@
                 <ul class="nav nav-list">
                     <li class="nav-header">Project</li>
                                 
-      <li class="active">
+      <li>
     
-            <a href="#"><i class="none"></i>Home</a>
-          </li>
+                          <a href="index.html" title="Home">
+          <i class="none"></i>
+        Home</a>
+            </li>
                   
       <li>
     
@@ -208,12 +210,10 @@
         FindBugs Report</a>
             </li>
                   
-      <li>
+      <li class="active">
     
-                          <a href="surefire.html" title="Surefire Report">
-          <i class="none"></i>
-        Surefire Report</a>
-            </li>
+            <a href="#"><i class="none"></i>Surefire Report</a>
+          </li>
                   
       <li>
     
@@ -263,15 +263,23 @@
                 
         <div id="bodyColumn"  class="span9" >
                                   
-            <p></p><div class="section"><h2>JCommon Init<a name="JCommon_Init"></a></h2><p>Provides access for loosely-coupled libraries to register initialization and shutdown routines at controlled points in an application. Also allows for the automatic extraction and processing of embedded resources at runtime. These resources are described in a special XML file and a number of processors can be used to do a variety of things such as loading a native library, conditionally extract a file, define an environment variable, create a symbolic link, set a variable for use later in the resource processing stage, etc.</p><p>Please see the documentation for more information.</p><p>To use this library, add the following snippet to your <i>pom</i> file:</p>
-<div class="source"><pre class="prettyprint">&lt;dependencies&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;org.jcommon&lt;/groupId&gt;
-        &lt;artifactId&gt;init&lt;/artifactId&gt;
-        &lt;version&gt;1.0&lt;/version&gt;
-    &lt;/dependency&gt;
-&lt;/dependencies&gt;
-</pre></div></div>
+            <script type="text/javascript">
+//<![CDATA[
+function toggleDisplay(elementId) {
+ var elm = document.getElementById(elementId + 'error');
+ if (elm && typeof elm.style != "undefined") {
+ if (elm.style.display == "none") {
+ elm.style.display = "";
+ document.getElementById(elementId + 'off').style.display = "none";
+ document.getElementById(elementId + 'on').style.display = "inline";
+ } else if (elm.style.display == "") { elm.style.display = "none";
+ document.getElementById(elementId + 'off').style.display = "inline";
+ document.getElementById(elementId + 'on').style.display = "none";
+ } 
+ } 
+ }
+//]]>
+</script><div class="section"><h2>Surefire Report<a name="Surefire_Report"></a></h2></div><div class="section"><h2>Summary<a name="Summary"></a></h2><a name="Summary"></a><p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p><br /><table border="1" class="table table-striped"><tr class="a"><th>Tests</th><th>Errors </th><th>Failures</th><th>Skipped</th><th>Success Rate</th><th>Time</th></tr><tr class="b"><td>7</td><td>0</td><td>0</td><td>0</td><td>100%</td><td>0.234</td></tr></table><br /><p>Note: failures are anticipated and checked for with assertions while errors are unanticipated.</p><br /></div><div class="section"><h2>Package List<a name="Package_List"></a></h2><a name="Package_List"></a><p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p><br /><table border="1" class="table table-striped"><tr class="a"><th>Package</th><th>Tests</th><th>Errors </th><th>Failures</th><th>Skipped</th><th>Success Rate</th><th>Time</th></tr><tr class="b"><td><a href="#jcommon.init">jcommon.init</a></td><td>2</td><td>0</td><td>0</td><td>0</td><td>100%</td><td>0.01</td></tr><tr class="a"><td><a href="#jcommon.extract">jcommon.extract</a></td><td>5</td><td>0</td><td>0</td><td>0</td><td>100%</td><td>0.224</td></tr></table><br /><p>Note: package statistics are not computed recursively, they only sum up all of its testsuites numbers.</p><div class="section"><h3>jcommon.init<a name="jcommon.init"></a></h3><a name="jcommon.init"></a><table border="1" class="table table-striped"><tr class="a"><th></th><th>Class</th><th>Tests</th><th>Errors </th><th>Failures</th><th>Skipped</th><th>Success Rate</th><th>Time</th></tr><tr class="b"><td><a href="#jcommon.initRegistryReferenceTest"><img src="images/icon_success_sml.gif" alt="" /></a></td><td><a href="#jcommon.initRegistryReferenceTest">RegistryReferenceTest</a></td><td>1</td><td>0</td><td>0</td><td>0</td><td>100%</td><td>0</td></tr><tr class="a"><td><a href="#jcommon.initSystemLoaderTest"><img src="images/icon_success_sml.gif" alt="" /></a></td><td><a href="#jcommon.initSystemLoaderTest">SystemLoaderTest</a></td><td>1</td><td>0</td><td>0</td><td>0</td><td>100%</td><td>0.01</td></tr></table></div><div class="section"><h3>jcommon.extract<a name="jcommon.extract"></a></h3><a name="jcommon.extract"></a><table border="1" class="table table-striped"><tr class="a"><th></th><th>Class</th><th>Tests</th><th>Errors </th><th>Failures</th><th>Skipped</th><th>Success Rate</th><th>Time</th></tr><tr class="b"><td><a href="#jcommon.extractRegistryTest"><img src="images/icon_success_sml.gif" alt="" /></a></td><td><a href="#jcommon.extractRegistryTest">RegistryTest</a></td><td>1</td><td>0</td><td>0</td><td>0</td><td>100%</td><td>0</td></tr><tr class="a"><td><a href="#jcommon.extractResourcesTest"><img src="images/icon_success_sml.gif" alt="" /></a></td><td><a href="#jcommon.extractResourcesTest">ResourcesTest</a></td><td>4</td><td>0</td><td>0</td><td>0</td><td>100%</td><td>0.224</td></tr></table></div><br /></div><div class="section"><h2>Test Cases<a name="Test_Cases"></a></h2><a name="Test_Cases"></a><p>[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</p><div class="section"><h3>RegistryReferenceTest<a name="RegistryReferenceTest"></a></h3><a name="jcommon.initRegistryReferenceTest"></a><table border="1" class="table table-striped"><tr class="a"><td><img src="images/icon_success_sml.gif" alt="" /></td><td>testRegistry</td><td>0</td></tr></table></div><div class="section"><h3>SystemLoaderTest<a name="SystemLoaderTest"></a></h3><a name="jcommon.initSystemLoaderTest"></a><table border="1" class="table table-striped"><tr class="a"><td><img src="images/icon_success_sml.gif" alt="" /></td><td>testSystemLoader</td><td>0.01</td></tr></table></div><div class="section"><h3>RegistryTest<a name="RegistryTest"></a></h3><a name="jcommon.extractRegistryTest"></a><table border="1" class="table table-striped"><tr class="a"><td><img src="images/icon_success_sml.gif" alt="" /></td><td>testRegistry</td><td>0</td></tr></table></div><div class="section"><h3>ResourcesTest<a name="ResourcesTest"></a></h3><a name="jcommon.extractResourcesTest"></a><table border="1" class="table table-striped"><tr class="a"><td><img src="images/icon_success_sml.gif" alt="" /></td><td>testExtract</td><td>0</td></tr><tr class="b"><td><img src="images/icon_success_sml.gif" alt="" /></td><td>testResourceProcessorFactory</td><td>0.093</td></tr><tr class="a"><td><img src="images/icon_success_sml.gif" alt="" /></td><td>testRead</td><td>0</td></tr><tr class="b"><td><img src="images/icon_success_sml.gif" alt="" /></td><td>testVariables</td><td>0.131</td></tr></table></div><br /></div>
                   </div>
             </div>
           </div>

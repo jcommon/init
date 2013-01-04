@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Date-Revision-yyyymmdd" content="20130103" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>JCommon Init - Welcome</title>
+    <title>JCommon Init - FindBugs Bug Detector Report</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.3.0.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -153,10 +153,12 @@
                 <ul class="nav nav-list">
                     <li class="nav-header">Project</li>
                                 
-      <li class="active">
+      <li>
     
-            <a href="#"><i class="none"></i>Home</a>
-          </li>
+                          <a href="index.html" title="Home">
+          <i class="none"></i>
+        Home</a>
+            </li>
                   
       <li>
     
@@ -201,12 +203,10 @@
         Checkstyle</a>
             </li>
                   
-      <li>
+      <li class="active">
     
-                          <a href="findbugs.html" title="FindBugs Report">
-          <i class="none"></i>
-        FindBugs Report</a>
-            </li>
+            <a href="#"><i class="none"></i>FindBugs Report</a>
+          </li>
                   
       <li>
     
@@ -263,15 +263,7 @@
                 
         <div id="bodyColumn"  class="span9" >
                                   
-            <p></p><div class="section"><h2>JCommon Init<a name="JCommon_Init"></a></h2><p>Provides access for loosely-coupled libraries to register initialization and shutdown routines at controlled points in an application. Also allows for the automatic extraction and processing of embedded resources at runtime. These resources are described in a special XML file and a number of processors can be used to do a variety of things such as loading a native library, conditionally extract a file, define an environment variable, create a symbolic link, set a variable for use later in the resource processing stage, etc.</p><p>Please see the documentation for more information.</p><p>To use this library, add the following snippet to your <i>pom</i> file:</p>
-<div class="source"><pre class="prettyprint">&lt;dependencies&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;org.jcommon&lt;/groupId&gt;
-        &lt;artifactId&gt;init&lt;/artifactId&gt;
-        &lt;version&gt;1.0&lt;/version&gt;
-    &lt;/dependency&gt;
-&lt;/dependencies&gt;
-</pre></div></div>
+            <div class="section"><h2>FindBugs Bug Detector Report<a name="FindBugs_Bug_Detector_Report"></a></h2><p>The following document contains the results of <a class="externalLink" href="http://findbugs.sourceforge.net">FindBugs Report</a></p><p>FindBugs Version is <i>2.0.1</i></p><p>Threshold is <i>medium</i></p><p>Effort is <i>min</i></p></div><div class="section"><h2>Summary<a name="Summary"></a></h2><table border="0" class="table table-striped"><tr class="a"><th>Classes</th><th>Bugs</th><th>Errors</th><th>Missing Classes</th></tr><tr class="b"><td>61</td><td>11</td><td>0</td><td>0</td></tr></table></div><div class="section"><h2>Files<a name="Files"></a></h2><table border="0" class="table table-striped"><tr class="a"><th>Class</th><th>Bugs</th></tr><tr class="b"><td><a href="#jcommon.extract.Reference">jcommon.extract.Reference</a></td><td>1</td></tr><tr class="a"><td><a href="#jcommon.extract.ResourceProcessorFactory">jcommon.extract.ResourceProcessorFactory</a></td><td>1</td></tr><tr class="b"><td><a href="#jcommon.extract.ResourceUtils">jcommon.extract.ResourceUtils</a></td><td>3</td></tr><tr class="a"><td><a href="#jcommon.extract.Resources">jcommon.extract.Resources</a></td><td>4</td></tr><tr class="b"><td><a href="#jcommon.extract.processors.VarProcessor">jcommon.extract.processors.VarProcessor</a></td><td>1</td></tr><tr class="a"><td><a href="#jcommon.init.Sys">jcommon.init.Sys</a></td><td>1</td></tr></table></div><a name="jcommon.extract.Reference"></a><div class="section"><h3>jcommon.extract.Reference<a name="jcommon.extract.Reference"></a></h3><table border="0" class="table table-striped"><tr class="b"><th>Bug</th><th>Category</th><th>Details</th><th>Line</th><th>Priority</th></tr><tr class="a"><td>jcommon.extract.Reference.None should be package protected</td><td>MALICIOUS_CODE</td><td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#MS_PKGPROTECT">MS_PKGPROTECT</a></td><td><a href="./xref/jcommon/extract/Reference.html#16">16</a></td><td>Medium</td></tr></table></div><a name="jcommon.extract.ResourceProcessorFactory"></a><div class="section"><h3>jcommon.extract.ResourceProcessorFactory<a name="jcommon.extract.ResourceProcessorFactory"></a></h3><table border="0" class="table table-striped"><tr class="b"><th>Bug</th><th>Category</th><th>Details</th><th>Line</th><th>Priority</th></tr><tr class="a"><td>jcommon.extract.ResourceProcessorFactory.defaultProcessors should be package protected</td><td>MALICIOUS_CODE</td><td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#MS_PKGPROTECT">MS_PKGPROTECT</a></td><td><a href="./xref/jcommon/extract/ResourceProcessorFactory.html#">Not available</a></td><td>Medium</td></tr></table></div><a name="jcommon.extract.ResourceUtils"></a><div class="section"><h3>jcommon.extract.ResourceUtils<a name="jcommon.extract.ResourceUtils"></a></h3><table border="0" class="table table-striped"><tr class="b"><th>Bug</th><th>Category</th><th>Details</th><th>Line</th><th>Priority</th></tr><tr class="a"><td>exceptional return value of java.io.File.delete() ignored in jcommon.extract.ResourceUtils.deleteDirectory(File)</td><td>BAD_PRACTICE</td><td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">RV_RETURN_VALUE_IGNORED_BAD_PRACTICE</a></td><td><a href="./xref/jcommon/extract/ResourceUtils.html#110">110</a></td><td>Medium</td></tr><tr class="b"><td>exceptional return value of java.io.File.mkdirs() ignored in jcommon.extract.ResourceUtils.extractResource(String, File, boolean)</td><td>BAD_PRACTICE</td><td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">RV_RETURN_VALUE_IGNORED_BAD_PRACTICE</a></td><td><a href="./xref/jcommon/extract/ResourceUtils.html#251">251</a></td><td>Medium</td></tr><tr class="a"><td>exceptional return value of java.io.File.setLastModified(long) ignored in jcommon.extract.ResourceUtils.saveLastModified(File, long)</td><td>BAD_PRACTICE</td><td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">RV_RETURN_VALUE_IGNORED_BAD_PRACTICE</a></td><td><a href="./xref/jcommon/extract/ResourceUtils.html#230">230</a></td><td>Medium</td></tr></table></div><a name="jcommon.extract.Resources"></a><div class="section"><h3>jcommon.extract.Resources<a name="jcommon.extract.Resources"></a></h3><table border="0" class="table table-striped"><tr class="b"><th>Bug</th><th>Category</th><th>Details</th><th>Line</th><th>Priority</th></tr><tr class="a"><td>jcommon.extract.Resources.newInstance(ResourceProcessorFactory, IVariableProcessor, File) might ignore java.io.IOException</td><td>BAD_PRACTICE</td><td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#DE_MIGHT_IGNORE">DE_MIGHT_IGNORE</a></td><td><a href="./xref/jcommon/extract/Resources.html#551">551</a></td><td>Medium</td></tr><tr class="b"><td>jcommon.extract.Resources.getPackages() may expose internal representation by returning Resources.packages</td><td>MALICIOUS_CODE</td><td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#EI_EXPOSE_REP">EI_EXPOSE_REP</a></td><td><a href="./xref/jcommon/extract/Resources.html#223">223</a></td><td>Medium</td></tr><tr class="a"><td>jcommon.extract.Resources.getReferences() may expose internal representation by returning Resources.references</td><td>MALICIOUS_CODE</td><td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#EI_EXPOSE_REP">EI_EXPOSE_REP</a></td><td><a href="./xref/jcommon/extract/Resources.html#207">207</a></td><td>Medium</td></tr><tr class="b"><td>Load of known null value in jcommon.extract.Resources.extractResources(int, String[], IResourcePackage[], IResourceFilter, IResourceProgressListener)</td><td>STYLE</td><td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#NP_LOAD_OF_KNOWN_NULL_VALUE">NP_LOAD_OF_KNOWN_NULL_VALUE</a></td><td><a href="./xref/jcommon/extract/Resources.html#674">674</a></td><td>Medium</td></tr></table></div><a name="jcommon.extract.processors.VarProcessor"></a><div class="section"><h3>jcommon.extract.processors.VarProcessor<a name="jcommon.extract.processors.VarProcessor"></a></h3><table border="0" class="table table-striped"><tr class="a"><th>Bug</th><th>Category</th><th>Details</th><th>Line</th><th>Priority</th></tr><tr class="b"><td>Unread field: jcommon.extract.processors.VarProcessor.varproc</td><td>PERFORMANCE</td><td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#URF_UNREAD_FIELD">URF_UNREAD_FIELD</a></td><td><a href="./xref/jcommon/extract/processors/VarProcessor.html#31">31</a></td><td>Medium</td></tr></table></div><a name="jcommon.init.Sys"></a><div class="section"><h3>jcommon.init.Sys<a name="jcommon.init.Sys"></a></h3><table border="0" class="table table-striped"><tr class="a"><th>Bug</th><th>Category</th><th>Details</th><th>Line</th><th>Priority</th></tr><tr class="b"><td>The class name jcommon.init.Sys shadows the simple name of the superclass jcommon.core.Sys</td><td>BAD_PRACTICE</td><td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#NM_SAME_SIMPLE_NAME_AS_SUPERCLASS">NM_SAME_SIMPLE_NAME_AS_SUPERCLASS</a></td><td><a href="./xref/jcommon/init/Sys.html#35">35-148</a></td><td>High</td></tr></table></div>
                   </div>
             </div>
           </div>
